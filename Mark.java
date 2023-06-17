@@ -3,7 +3,7 @@ public class Mark {
     public static void main(String[] string)
     {
       try (Scanner sc = new Scanner(System.in)) {
-        System.out.println("enter the mark obtrained in physic");
+        System.out.println("enter the mark");
         int phy=sc.nextInt();
         System.out.println("enter the  mark obtained in english");
         int eng=sc.nextInt();
