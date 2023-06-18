@@ -42,11 +42,7 @@ public class Game {
         System.out.println("computer chose: scissor");
 
 
-    }
-    
-    
-sc.close();
-    
+    }   
     }
 
 
