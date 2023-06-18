@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Fun {
+public class fun {
     static void prime(int n)
     {
         int c=0;
