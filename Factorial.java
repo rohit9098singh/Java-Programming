@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class First {
-   static int factorial(int n)
+public class Factorial {
+   static int fact(int n)
     {
         if(n==1||n==0)
         {
@@ -8,16 +8,16 @@ public class First {
         }
         else
         {
-            factorial=n*factoraial(n-1);
+           return n*fact(n-1);
         }
     }
     public static void main(String[] args)
     {
-        
          System.out.println("enter the value of n");
          Scanner sc=new Scanner(System.in);
          int n = sc.nextInt();
-         System.out.println("factorial of the enterd number is"+factorial(n));
+         System.out.println("factorial of the enterd number is\n"+fact(n));
+         sc.close();
 
 
     }
