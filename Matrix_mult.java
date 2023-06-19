@@ -10,7 +10,7 @@ public class Matrix_mult {
       int c1=sc.nextInt();
       System.out.println("enter the numcer of rows for your 2nd matrix");
       int r2=sc.nextInt();
-      System.out.println("enter the numcer of rows for your 2nd matrix");
+      System.out.println("enter the numcer of column for your 2nd matrix");
       int c2=sc.nextInt();
       int mat1[][]=new int[r1][c1];
       int mat2[][]=new int[r2][c2];
@@ -43,9 +43,9 @@ public class Matrix_mult {
           System.out.println("");
         }
         System.out.println("your second matrix is");
-        for(int i=0;i<r1;i++)
+        for(int i=0;i<r2;i++)
         {
-          for(int j=0;j<c1;j++)
+          for(int j=0;j<c2;j++)
           {
             System.out.printf("%d\t",mat2[i][j]);
           }
@@ -53,7 +53,7 @@ public class Matrix_mult {
         }
         for(int i=0;i<r1;i++)
         {
-          for(int j=0;j<c1;j++)
+          for(int j=0;j<c2;j++)
           {
             for(int k=0;k<r2;k++)
             {
