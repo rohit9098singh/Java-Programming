@@ -29,12 +29,12 @@ public class String_func {
        System.out.println(nonTrimmed);
 
       String trimmedstring= nontrimmed .trim();
-      System.out.println(trimmedstring);
+      System.out.println(trimmedstring);*/
        
        System.out.println(st.charAt('3'));
        System.out.println(st.indexOf("o"));
 
-       String Modify st="rohitdoll";*/
+       
     }
     
 }
