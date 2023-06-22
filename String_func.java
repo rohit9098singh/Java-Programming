@@ -5,7 +5,7 @@ public class String_func {
       //Scanner sc =new Scanner(System.in); 
       //System.out.println("enter your string ");
       //String st=sc.nextLine();
-      String st=new String("Rohit");
+      String st=new String("   Rohit   ");
 
 
       int l=st.length();  
@@ -24,13 +24,7 @@ public class String_func {
 
        System.out.println(st.startsWith("Roh"));
        System.out.println(st.endsWith("roh"));
-
-       /*String nonTrimmed="Rohit";
-       System.out.println(nonTrimmed);
-
-      String trimmedstring= nontrimmed .trim();
-      System.out.println(trimmedstring);*/
-       
+      
        System.out.println(st.charAt('3'));
        System.out.println(st.indexOf("o"));
 
