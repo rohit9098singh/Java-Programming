@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Max_min {
+public class ch1_Max_min {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);

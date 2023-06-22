@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class mat_tarnspose {
+public class ch1_mat_tarnspose {
     public static void main(String[] args)
     {
         Scanner sc =new Scanner(System.in);

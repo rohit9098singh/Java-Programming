@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Removing_dublicate {
+public class ch1_emoving_dublicate {
     public static void main(String[] args)
     {
         Scanner sc = new Scanner(System.in);

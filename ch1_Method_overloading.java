@@ -1,7 +1,5 @@
 import java.util.Scanner;
-
-import javax.crypto.interfaces.DHPrivateKey;
-public class Method_overloading {
+public class ch1_Method_overloading {
     void add(int a ,int b)
     {
         
@@ -31,7 +29,7 @@ public class Method_overloading {
         b=sc.nextInt();
         c=sc.nextInt();
         d=sc.nextInt();
-        Method_overloading obj=new  Method_overloading();
+        ch1_Method_overloading obj=new  ch1_Method_overloading();
         obj.add(a,b);
         obj.add(a,b,c);
         obj.add(a,b,c,d);

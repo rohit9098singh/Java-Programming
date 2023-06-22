@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Varags {
+public class ch2Varags {
     float average(float...arr)
     {
        float total =0;
@@ -21,7 +21,7 @@ public class Varags {
         {
           arr[i]=sc.nextFloat();
         }
-        Varags obj= new Varags();
+        ch2Varags obj= new ch2Varags();
        System.out.println("average is:"+obj.average(arr));
     }
     

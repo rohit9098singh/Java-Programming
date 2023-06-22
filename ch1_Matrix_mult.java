@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Matrix_mult {
+public class ch1_Matrix_mult {
     public static void main(String[] args)
     {
       Scanner sc= new Scanner(System.in);

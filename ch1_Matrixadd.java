@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Matrixadd {
+public class ch1_Matrixadd {
     public static void main(String[] args)
     {
         int row,col;

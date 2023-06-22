@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Factorial {
+public class ch1_factorial {
    static int fact(int n)
     {
         if(n==1||n==0)
