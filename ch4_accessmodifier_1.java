@@ -19,7 +19,7 @@ class staff
         return id;
     }
 }
-public class ch3_oops6_accesssmodifier {
+public class ch4_accessmodifier_1 {
     public static void main(String[] args)
 {
     staff st=new staff();
