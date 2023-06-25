@@ -14,7 +14,7 @@ class A
 class B extends A
 {
      @Override
-    public void meth2()
+      public void meth2()
     {
         System.out.println("i am  method 2 of class b");
 
@@ -31,6 +31,7 @@ public class ch5_inhrtitance_methodoveriding {
         B b=new B();
         b.meth2();
         b.meth3();
+        System.out.println("the value of b in the class a is "+b.display());
 
     }
     
