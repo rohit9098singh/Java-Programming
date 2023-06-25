@@ -27,10 +27,10 @@ class cylinder1 extends circle
 
 public class ch5_inheritance_via_cylinderandcircle {
     public static void main(String[] args) {
-        circle c=new circle(54);
-       // cylinder1 c1=new cylinder1(12,32);
-        //System.out.println(c1.volume());
-        System.out.println(c.area());
+       // circle c=new circle(54);//use any of it wheather it is parent class object or child class object
+        cylinder1 c1=new cylinder1(12,32);
+        System.out.println(c1.volume());
+        //System.out.println(c.area());
 
     }
     
