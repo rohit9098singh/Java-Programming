@@ -43,7 +43,7 @@ public int getsalary()
 
 public class ch4_ovreloadedconstructor {
     public static void main(String[] args) {
-        buddy b1=new buddy();//40000,1,"hello world");
+        buddy b1=new buddy(40000,1,"hello world");
          System.out.println(b1.getid());
         System.out.println(b1.getsalary());
         System.out.println(b1.getname());
