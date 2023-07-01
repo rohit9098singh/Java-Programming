@@ -27,6 +27,8 @@ public class ch7_abstractclass {
     public static void main(String[] args) {
         demo d =new demo();
         System.out.println(d.sumTwo(2,66));
+        d.display();
+       // System.out.println(d.sumthree(2,4,5));
 }
 }
 
