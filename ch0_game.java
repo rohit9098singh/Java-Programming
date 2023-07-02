@@ -1,6 +1,6 @@
 import java.util.Scanner;
 import java.util.Random;
-public class game 
+public class ch0_game 
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
