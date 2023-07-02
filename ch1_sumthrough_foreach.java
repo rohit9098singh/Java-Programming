@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ch1_Practice {
+public class ch1_sumthrough_foreach {
    int add(int...arr)
    {
     int sum =0;
@@ -20,7 +20,7 @@ public class ch1_Practice {
     {
        arr[i]=sc.nextInt();
     }
-    ch1_Practice p=new ch1_Practice();
+    ch1_sumthrough_foreach p=new ch1_sumthrough_foreach();
     int res=p.add(arr);
     System.out.println("the sum of the enterd number are as follow\n"+res);
 
