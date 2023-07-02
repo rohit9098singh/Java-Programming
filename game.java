@@ -4,7 +4,7 @@ public class game
 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        System.out.println("enter 0: for rock paper\nenter 1:paper\nenter 2:scissor");
+        System.out.println("enter 0: for rock\nenter 1:paper\nenter 2:scissor");
         int userinput =sc.nextInt();
         Random ran=new Random();
         int computerinput =ran.nextInt();
