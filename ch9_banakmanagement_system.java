@@ -2,9 +2,15 @@ import java.util.Scanner;
 class bankaccount
 {
     double balance;
+    String pannumber;
+    String address;
+    String name;
+    String phonenumber;
+    String adharnumber;
     double prevtrans;
     String customername;
     String coustomerid;
+    int no_of_customer=0;
     bankaccount(String customername,String cutomerid)
     {
         this.customername=customername;
@@ -51,34 +57,66 @@ class bankaccount
         System.out.println("Customer ID: " +coustomerid);
         System.out.println("Balance: " + balance);
     }
+    void addcustomer()
+    {
+        no_of_customer++;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter your name");
+        String name=sc.nextLine();
+        System.out.println("enter your customer id");
+        String customerid=sc.nextLine();
+         System.out.println("enter your adharnumber");
+        String adharnumber=sc.nextLine();
+         System.out.println("enter your phone number");
+        String phonenumber=sc.nextLine();
+         System.out.println("enter your pancard number");
+        String pannumber=sc.nextLine();
+        if(isvalidpannumber(pannumber))
+        {
+            System.out.println("panumber="+pannumber);
+        }
+        else
+        {
+            System.out.println("not a valid pannumber please recheck it");
+        }
+    }    
+         boolean isvalidpannumber( String pannumber)
+        {
+          String st="[A-z]{5}[0-9]{4}[A-z]{1}";
+          return pannumber.matches(st);
+        }
+        int showadded_customer()
+        {
+            return no_of_customer;
+        }
    void menu() 
      {
     char option;
     Scanner sc = new Scanner(System.in);
     System.out.println("Welcome " + customername);
     System.out.println("Your ID: " + coustomerid);
-    System.out.println("");
     System.out.println("a) Check Balance");
     System.out.println("b) Withdraw Amount");
     System.out.println("c) Deposit Amount");
     System.out.println("d) Previous Transaction");
     System.out.println("e)printbill");
-    System.out.println("f) Exit");
+    System.out.println("f) add_account");
+    System.out.println("g)showadded_customer");
+    System.out.println("h) Exit");
+    System.out.println("********************************************");
+        System.out.println("Choose an option");
+       option = sc.next().charAt(0);
+       System.out.println("\n");
 
-    option = sc.next().charAt(0);
-    System.out.println("\n");
-
-    while (Character.toLowerCase(option) != 'f') {
+    while (Character.toLowerCase(option) != 'h') {
         System.out.println("********************************************");
         System.out.println("Choose an option");
-        System.out.println("\n");
 
         switch (Character.toLowerCase(option)) {
             case 'a':
                 System.out.println("......................");
                 System.out.println("Balance = " + balance);
                 System.out.println("......................");
-                System.out.println("\n");
                 break;
             case 'b':
                 System.out.println("......................");
@@ -86,7 +124,6 @@ class bankaccount
                 System.out.println("......................");
                 double amt = sc.nextDouble();
                 withdrawl(amt);
-                System.out.println("\n");
                 break;
             case 'c':
                 System.out.println("......................");
@@ -94,18 +131,26 @@ class bankaccount
                 System.out.println("......................");
                 double amtd = sc.nextDouble();
                 addbalance(amtd);
-                System.out.println("\n");
                 break;
             case 'd':
                 System.out.println("......................");
                 System.out.println("Previous Transaction:");
                 getprevioustransaction();
                 System.out.println("......................");
-                System.out.println("\n");
                 break;
                 case 'e':
                 {
                     printBill();
+                    break;
+                }
+                case 'f':
+                {
+                    addcustomer();
+                    break;
+                }
+                case 'h':
+                {
+                    showadded_customer();
                 }
             default:
                 System.out.println("Choose a correct option to proceed");
@@ -113,20 +158,25 @@ class bankaccount
         }
 
         System.out.println("********************************************");
-        System.out.println("Choose an option");
+        System.out.println("Choose an optiona:a)check balance\nb:withdrawal amount\nc:deposite\nd:previous transaction\ne:printbill\nf:add_account\ng)showadded_customer\nh)exit");
         option = sc.next().charAt(0);
-        System.out.println("\n");
     }
     
     System.out.println("Thank you for using our banking services");
 } 
 }
 
-public class ch9_bank_managementsystem {
+
+public class ch9_banakmanagement_system{
     public static void main(String[] args) {
         bankaccount bank=new bankaccount("rohit","101");
         bank.menu();
-        bankaccount bank2=new bankaccount("dolly","102a");
+        bankaccount bank2=new bankaccount("dolly","102");
         bank2.menu();
     }
 }
+
+
+
+    
+
