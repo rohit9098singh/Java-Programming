@@ -11,7 +11,7 @@ class MyClass {
     }
 }
 
-public class GarbageCollectionExample {
+public class ch10_GarbageCollectionExample {
     public static void main(String[] args) {
         // Create an object
         MyClass obj = new MyClass();
