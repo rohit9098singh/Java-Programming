@@ -36,5 +36,19 @@ public class ch10_upcasting_downcasting {
                                    //therefore we forcefully convert so that it becomes a downcating
         s.musicplayer();//here it is allowed as we have typecacted it to child class                                                                
     }
-    
+     
+
 }
+/*S.No	Upcasting	Downcasting
+1.	A child object is typecasted to a parent object
+2.	We can perform Upcasting implicitly or explicitly.	
+3.	In the child class, we can access the methods and variables of the parent class.
+4.	We can access some specified methods of the child class.
+5.	Parent p = new Parent()*/
+
+/*Downcasting
+1. The reference of the parent class object is passed to the child class.
+2. Implicitly Downcasting is not possible.
+3. The methods and variables of both the classes(parent and child) can be accessed.
+4.	All the methods and variables of both classes can be accessed by performing downcasting.
+5. Child c = (Child)p;*/
