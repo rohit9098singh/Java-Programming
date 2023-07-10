@@ -9,7 +9,7 @@ class yielddemo extends Thread
         }
     }
 }
-public class ch12_yieldmethod {
+public class ch12_5yieldmethod {
     public static void main(String[] args) {
         yielddemo d=new yielddemo();
         d.start();
