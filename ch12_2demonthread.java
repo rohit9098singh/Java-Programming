@@ -30,6 +30,7 @@ public class ch12_2demonthread {
             try{
                 System.out.println("main thread task");
                 Thread.sleep(1000);
+                System.out.print(+i+":");
             }
                   catch(Exception e)
             {
