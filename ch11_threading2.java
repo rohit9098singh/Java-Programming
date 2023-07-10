@@ -25,7 +25,7 @@ class mythread1 extends Thread
   }
 }
 
-public class ch11_threading {
+public class ch11_threading2 {
     public static void main(String[] args) {
         mythread t=new mythread();
         t.start();/*for executing the run method we have to call the start method we cannot directly call the methods

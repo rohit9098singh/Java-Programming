@@ -14,7 +14,7 @@ class runnablethread1 implements Runnable
      System.out.println("my name is thread 2");   
     }
 }
-public class ch11_threadusing_runnable_interface {
+public class ch11_threadusing3_runnable_interface {
     public static void main(String[] args) 
     {
        runnablethread t1=new runnablethread();

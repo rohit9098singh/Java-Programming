@@ -1,5 +1,5 @@
 
-public class Threads {
+public class ch11thread4 {
     public static void main(String[] args) {
         System.out.println("hello world i am your");
         System.out.println(Thread.currentThread().getName()+"thread");

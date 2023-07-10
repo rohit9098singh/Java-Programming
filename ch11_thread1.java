@@ -5,7 +5,7 @@ class test extends Thread
         System.out.println("thrad is running");
     }
 }
-public class ch11_thread0 {
+public class ch11_thread1 {
     public static void main(String[] args) {
         test t=new test();// 1)performing single task from single thread
         t.start();
