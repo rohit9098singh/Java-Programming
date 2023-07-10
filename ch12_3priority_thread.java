@@ -5,7 +5,7 @@ class work extends Thread
         System.out.println("the priority of this thread is :"+Thread.currentThread().getPriority());
     }
 }
-public class ch12_priority_thread {
+public class ch12_3priority_thread {
     public static void main(String[] args) {
           System.out.println("main thread original priority :"+Thread.currentThread().getPriority());
           

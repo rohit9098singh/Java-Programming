@@ -16,7 +16,7 @@ class sleepexample extends Thread {
     }
 }
 
-public class ch12_sleep_method {
+public class ch12_5sleep_method {
     public static void main(String[] args) {
         sleepexample e = new sleepexample();
         e.start();
