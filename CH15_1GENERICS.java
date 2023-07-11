@@ -15,7 +15,7 @@ class printer <T>/*here T represent the type of thing that this printer is going
         System.out.println(thingstoprint);
     }
 }
-public class CH15_GENERICS {
+public class CH15_1GENERICS {
     public static void main(String[] args) {
         printer <Integer> integerprinter= new printer<>(23);//IN THE ANGULAR BRACKET WE MSUT SPECIFY THAT IT IS TAKING AN INTEGER
         integerprinter.print();
