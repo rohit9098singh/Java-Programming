@@ -61,11 +61,13 @@ class bankaccount {
         String phonenumber = sc.nextLine();
         System.out.println("enter your pancard number");
         String pannumber = sc.nextLine();
-        if (isvalidpannumber(pannumber)) {
-            System.out.println("paNnumber=" + pannumber);
-        } else {
+        if (isvalidpannumber(pannumber))
+        {
+            System.out.print("");
+        } 
+        else {
             System.out.println("not a valid pannumber please recheck it");
-        }
+             }
     }
 
     boolean isvalidpannumber(String pannumber) {
