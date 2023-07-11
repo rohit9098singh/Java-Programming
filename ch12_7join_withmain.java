@@ -41,3 +41,4 @@ public class ch12_7join_withmain {
     }
     
 }
+/*not working with the main method that is why uploaded to git hub means the main method should execute first */
