@@ -9,8 +9,11 @@ class hero1 extends Thread{
             for(int i=0;i<5;i++)
             {
                 System.out.println(i);
+                System.out.println(Thread.currentThread().isInterrupted());/*IN PREVIOUS METHOD IT USE TO RETURN A DIFFERENT 
+                BOOLEAN VALUE HERE SINCE IT USE TO ALTER THE ACTUAL BOOLEAN VALUE TO ALTER INTRUPT() FUNCTION BUT NOT HERE ITS ALWAYS
+                RETURNS THE SAME BOOLEAN VALUE EVEN IT IS CALLED MULTIPLE TIME */
                 Thread.sleep(1000);
-                System.out.println(Thread.currentThread().isInterrupted());
+                
             }
         }
         catch(Exception e)
