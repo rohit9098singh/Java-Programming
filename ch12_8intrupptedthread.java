@@ -9,25 +9,27 @@ class intrupptedthread_example extends Thread
                 System.out.println("child thread :"+Thread.currentThread().getName());
                 Thread.sleep(1000);
 
+
             }
         }
         catch(Exception e)
         {
-            System.out.println(e);
+            System.out.println("the excetionn is "+e);
         }
     }
 }
 public class ch12_8intrupptedthread {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         intrupptedthread_example i=new intrupptedthread_example();
         i.start();
+        i.interrupt();//EK HE BAR EXECUTE KAETA HAI OR FIR INTERUPT KE VAJHA SE VO EXCEPTION BLOCK ME CHALA JATA HAI OR FIR MAIN KO EXECUTET KARAYEGA
+        i.join();
         try
         {
             for(int j=0;j<5;j++)
             {
-                i.interrupt();
                 System.out.println("main thread"+j);
-                Thread.sleep(500);
+                Thread.sleep(1000);
 
             }
         }

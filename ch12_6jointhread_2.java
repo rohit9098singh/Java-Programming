@@ -48,10 +48,10 @@ public class ch12_6jointhread_2 {
     public static void main(String[] args) throws InterruptedException {//throws added because of join method
         medical m=new medical();
         m.start();
-        m.join();
+        m.join(1000,250);
         drivingtest d= new drivingtest();
         d.start();
-        d.join();
+        d.join(2000,250);
         officersigh s=new officersigh();
         s.start();
     }
