@@ -18,7 +18,7 @@ class intrupptedthread_example extends Thread
         }
     }
 }
-public class ch12_8intrupptedthread {
+public class ch12_8intrupt_thread {
     public static void main(String[] args) throws InterruptedException {
         intrupptedthread_example i=new intrupptedthread_example();
         i.start();
