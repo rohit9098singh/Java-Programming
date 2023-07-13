@@ -59,7 +59,7 @@ public class ch15_generics4
 		bea.doRunTest();
 		
 		//Bound<String> bes = new Bound<String>(new String());//this will give u an error
-		//bea.doRunTest();
+		//g bea.doRunTest();
 	}
 
  
