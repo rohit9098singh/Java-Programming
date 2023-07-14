@@ -5,9 +5,9 @@ class bookmyticket
     {
         if(no_of_seat>=seats)
         {
-            System.out.println("your seat is booked successfully");
+            System.out.println(+seats+ " seat is booked successfully");
             no_of_seat=no_of_seat-seats;
-            System.out.println("total seats left now"+no_of_seat);
+            System.out.println("total seats left now-"+no_of_seat);
         }
         else{
             System.out.println("no you cannot book the ticket out of bound");
