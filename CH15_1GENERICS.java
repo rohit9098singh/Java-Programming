@@ -4,7 +4,7 @@
 
 class printer <T>/*here T represent the type of thing that this printer is going to be hold and print */
 {
-    T thingstoprint;//here T represent the data type whic could bbe anythig and it will take also and thingstoprint is variable
+    T thingstoprint;//here T represent the data type which could be anythig and it will take  and thingstoprint is variable
     
     public  printer( T thingstoprint)
     {
