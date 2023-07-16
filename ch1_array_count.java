@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
 public class ch1_array_count {
-    private static final String Specialchar = null;
-    private static final String Alphabet = null;
 
     public static void main(String[] args) {
         int alphabet = 0, num = 0, space = 0, specialchar = 0;
@@ -33,10 +31,11 @@ public class ch1_array_count {
             i++;
         }    
 
-            System.out.println("\nAlphabet letters: " + Alphabet);
+            System.out.println("\nAlphabet letters: " + alphabet);
             System.out.println("Number: " + num);
             System.out.println("Space: " + space);
-            System.out.println("Special characters: " + Specialchar);
+            System.out.println("Special characters: " + specialchar);
         
     }
+    
 }
