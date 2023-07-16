@@ -1,27 +1,48 @@
-class practice
+
+   class Add_Sub
 {
+    int n1,n2;
+    public Add_Sub(int x,int y)
+    {
+        this.n1=x;
+        this.n2=y;
+    }
     int add()
     {
-        return(10+10);
+        return n1+n2;
     }
-    int add(int x,int y)
+    int sub()
     {
-        return(x+y);
-    }
-    float add(float x, float y)
-    {
-        return x+y;
+        return n1-n2;
     }
 }
+class Mul_Div extends Add_Sub
+{
+    int a,b;
+    public Mul_Div(int x, int y)
+    {
+      super(x,y);
+      this.a=x;
+      this.b=y;
+    }
+    int mult()
+    {
+        return a*b;
+    }
+    int div()
+    {
+        return a/b;
+    }
+}
+    
 public class ch0_0practice
 {
     public static void main(String[] args) {
-        practice c=new practice();
-        System.out.println("using the default integer value "+c.add());
-        System.out.println("using the parameterized that is the overloaded constructor "+c.add(34,45));
-        System.out.println("using the float val es for adding of he values "+c.add(5.4f,4.3f));
-
+        Mul_Div obj=new Mul_Div(20,30);
+        System.out.println("addition ="+obj.add());
+        System.out.println("subtraction ="+obj.sub());
+        System.out.println("product ="+obj.mult());
+        System.out.println("divided vlaue="+obj.div());
     }
-   
     
 }
