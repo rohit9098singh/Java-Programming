@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Array_2D {
+public class ch1_array_2dimensional{
     public static void main(String[] args)
     {
         Scanner sc =new Scanner(System.in);
