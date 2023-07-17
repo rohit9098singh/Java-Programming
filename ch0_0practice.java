@@ -1,48 +1,47 @@
 
-   class Add_Sub
-{
-    int n1,n2;
-    public Add_Sub(int x,int y)
-    {
-        this.n1=x;
-        this.n2=y;
+   import java.util.Scanner;
+
+class Student {
+    int e_id;
+    int s1, s2, s3, total;
+    String name;
+
+    public Student() {
+        getStudentInfo();
     }
-    int add()
-    {
-        return n1+n2;
+
+    public void getStudentInfo() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the student id");
+        e_id = sc.nextInt();
+        sc.nextLine(); // Consume the remaining newline character
+        System.out.println("Enter the name");
+        name = sc.nextLine();
+        System.out.println("Enter the three subjects");
+        s1 = sc.nextInt();
+        s2 = sc.nextInt();
+        s3 = sc.nextInt();
+        if (s1 >= 50 && s2 >= 50 && s3 >= 50) {
+            total = s1 + s2 + s3;
+        } else {
+            total = 0;
+        }
     }
-    int sub()
-    {
-        return n1-n2;
-    }
-}
-class Mul_Div extends Add_Sub
-{
-    int a,b;
-    public Mul_Div(int x, int y)
-    {
-      super(x,y);
-      this.a=x;
-      this.b=y;
-    }
-    int mult()
-    {
-        return a*b;
-    }
-    int div()
-    {
-        return a/b;
+
+    public void display() {
+        System.out.println(e_id + " " + name + " " + total);
     }
 }
-    
-public class ch0_0practice
-{
+
+public class ch0_0practice {
     public static void main(String[] args) {
-        Mul_Div obj=new Mul_Div(20,30);
-        System.out.println("addition ="+obj.add());
-        System.out.println("subtraction ="+obj.sub());
-        System.out.println("product ="+obj.mult());
-        System.out.println("divided vlaue="+obj.div());
+        Student[] s = new Student[3];
+        for (int i = 0; i < 3; i++) {
+            s[i] = new Student();
+        }
+        System.out.println("Student details:");
+        for (int i = 0; i < 3; i++) {
+            s[i].display();
+        }
     }
-    
 }
