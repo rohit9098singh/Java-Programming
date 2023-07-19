@@ -2,8 +2,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-class pannelexyz extends JFrame {
-    pannelexyz() {
+class pannelexa extends JFrame {
+    private String name;
+    private String className;
+    private String rollNo;
+    private String subject;
+
+    pannelexa() {
         setTitle("cromepage");
         setSize(400, 400);
         setMinimumSize(new Dimension(300, 400));
@@ -39,10 +44,10 @@ class pannelexyz extends JFrame {
 
         enterButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                String name = nameField.getText();
-                String className = classField.getText();
-                String rollNo = rollNoField.getText();
-                String subject = subjectField.getText();
+                name = nameField.getText();
+                className = classField.getText();
+                rollNo = rollNoField.getText();
+                subject = subjectField.getText();
 
                 // Perform any desired operations with the entered student details here
                 
@@ -52,13 +57,34 @@ class pannelexyz extends JFrame {
                 System.out.println("Roll No: " + rollNo);
                 System.out.println("Subject: " + subject);
                 
+                // Clearing the text fields for the next entry
+                nameField.setText("");
+                classField.setText("");
+                rollNoField.setText("");
+                subjectField.setText("");
+                
                 // Displaying success message
                 JOptionPane.showMessageDialog(null, "Student details recorded successfully");
             }
         });
 
+        // Creating the view details button
+        JButton viewDetailsButton = new JButton("View Details");
+
+        viewDetailsButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                // Displaying the recorded student details in a message dialog
+                String message = "Name: " + name + "\n"
+                        + "Class: " + className + "\n"
+                        + "Roll No: " + rollNo + "\n"
+                        + "Subject: " + subject;
+                JOptionPane.showMessageDialog(null, message, "Student Details", JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
+
         add(studentPanel);
         add(enterButton);
+        add(viewDetailsButton);
 
         // Setting the layout constraints
         GridBagConstraints gbc = new GridBagConstraints();
@@ -70,11 +96,15 @@ class pannelexyz extends JFrame {
         gbc.gridy = 1;
         gbc.anchor = GridBagConstraints.CENTER;
         add(enterButton, gbc);
+
+        gbc.gridy = 2;
+        gbc.anchor = GridBagConstraints.CENTER;
+        add(viewDetailsButton, gbc);
     }
 }
 
-public class ch0_0practice {
+public class ch0_01_practice {
     public static void main(String[] args) {
-        pannelexyz pan = new pannelexyz();
+        pannelexa pan = new pannelexa();
     }
 }

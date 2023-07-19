@@ -1,82 +1,86 @@
-
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
+import javax.swing.*;
 
-class MySwing1 extends JFrame {
-    private JLabel label;
-    private JTextField emailField;
-    private JButton enterButton;
-    private JButton emailIdButton;
-
-    MySwing1() {
-        setTitle("Welcome");
+class studentpanel extends JFrame {
+    studentpanel() {
+        setTitle("cromepage");
         setSize(400, 400);
         setMinimumSize(new Dimension(300, 400));
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-
-        // Create components
-        label = new JLabel("Your first GUI program");
-        emailField = new JTextField(20);
-        enterButton = new JButton("Enter");
-        emailIdButton = new JButton("Email ID");
-
-        // Set layout
-        setLayout(new BorderLayout());
-
-        // Create panel for the "Your first GUI program" section
-        JPanel firstSectionPanel = new JPanel(new FlowLayout());
-        firstSectionPanel.add(label);
-        firstSectionPanel.add(emailField);
-        firstSectionPanel.add(enterButton);
-
-        // Create panel for the "Email ID" button
-        JPanel emailIdPanel = new JPanel(new FlowLayout());
-        emailIdPanel.add(emailIdButton);
-
-        // Add panels to the frame
-        add(firstSectionPanel, BorderLayout.NORTH);
-        add(emailIdPanel, BorderLayout.CENTER);
-
-        // Register button listeners
-        enterButton.setEnabled(true); // Disable enterButton initially
-
-        enterButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String email = emailField.getText();
-                performTask(email);
-            }
-        });
-
-        emailIdButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                String email = emailField.getText();
-                if (!email.isEmpty()) {
-                    performTask(email);
-                } else {
-                    JOptionPane.showMessageDialog(MySwing1.this, "Please enter an email ID");
-                }
-            }
-        });
-
-        emailField.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                emailIdButton.doClick(); // Trigger emailIdButton click when Enter key is pressed in emailField
-            }
-        });
-
         setVisible(true);
-    }
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
-    private void performTask(String email) {
-        JOptionPane.showMessageDialog(MySwing1.this, "Entered email: " + email);
-        emailField.setText(""); // Clear emailField after performing the task
+        setLayout(new GridBagLayout());//helps to keep all the labels at proper place
+
+        // Creating the panel for student details
+        Panel studentPanel = new Panel();
+        studentPanel.setLayout(new GridLayout(4, 2));//exception can be used not be used
+
+        Label nameLabel = new Label("Name:");
+        TextField nameField = new TextField();
+        Label classLabel = new Label("Class:");
+        TextField classField = new TextField();
+        Label rollNoLabel = new Label("Roll No:");
+        TextField rollNoField = new TextField();
+        Label subjectLabel = new Label("Subject:");
+        TextField subjectField = new TextField();
+
+        studentPanel.add(nameLabel);
+        studentPanel.add(nameField);
+        studentPanel.add(classLabel);
+        studentPanel.add(classField);
+        studentPanel.add(rollNoLabel);
+        studentPanel.add(rollNoField);
+        studentPanel.add(subjectLabel);
+        studentPanel.add(subjectField);
+
+        // Creating the enter button
+        JButton enterButton = new JButton("Enter");
+
+        enterButton.addActionListener(new ActionListener() {/*By combining these two parts together, addActionListener(new ActionListener()),
+             you are creating an anonymous inner class instance of the ActionListener interface and passing it as an argument to the
+              addActionListener() method. This allows you to define the ActionListener's behavior inline, without having to create
+               a separate class to implement the ActionListener interface. */
+            public void actionPerformed(ActionEvent e) {
+                String name = nameField.getText();
+                String className = classField.getText();
+                String rollNo = rollNoField.getText();
+                String subject = subjectField.getText();
+
+                // Perform any desired operations with the entered student details here
+                
+                // Displaying the entered details
+                /*System.out.println("Name: " + name);
+                System.out.println("Class: " + className);
+                System.out.println("Roll No: " + rollNo);
+                System.out.println("Subject: " + subject);*/
+                String message = "Name: " + name + "\nClass: " + className + "\nRoll No: " + rollNo + "\nSubject: " + subject;
+               JOptionPane.showMessageDialog(null,message, "Entered Details", JOptionPane.INFORMATION_MESSAGE);/*JOptionPane.ERROR_MESSAGE);
+                JOptionPane.INFORMATION_MESSAGE //can be any thing as per our choice apart from this 
+                JOptionPane.WARNING_MESSAGE 
+                JOptionPane.QUESTION_MESSAGE
+                 JOptionPane.PLAIN_MESSAGE); */  
+            }
+        });
+
+        add(studentPanel);
+        add(enterButton);
+
+        // Setting the layout constraints
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        gbc.anchor = GridBagConstraints.NORTH;
+        add(studentPanel, gbc);
+
+        gbc.gridy = 1;
+        gbc.anchor = GridBagConstraints.CENTER;
+        add(enterButton, gbc);
     }
 }
 
 public class ch16_swing {
     public static void main(String[] args) {
-        MySwing1 s = new MySwing1();
+        studentpanel pan = new studentpanel();
     }
 }

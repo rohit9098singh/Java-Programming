@@ -29,15 +29,22 @@ class pannelex extends JFrame{
         p2.add(l2);
         p2.add(b2);
         add(p2);
-
-
-
-
-    }
+ }
 }
 public class ch16_3_swing {
     public static void main(String[] args) {
         pannelex pan=new pannelex();
+        /*WE CAN ALSO MAKE THAT TEMPLET OF THE GUI IN THE MAIN METHOD INSTED IN THE CLASS ITS THE USER CHOICE BUT NOTE THAT 
+         * IN CALSS EXIT_ON_CLOSE WORKS DIRECTLY BECAUSE CLASS HAS IMPORTED THE PACKAGE BUT NOT HERE 
+         * IN MAIN WE HAVE TO SPECIFY FROM WHICH PAKAGE IT BELONGS TO
+         */
+
+       /*   pan.setTitle("cromepage");
+        pan.setSize(400,400);
+        pan.setMinimumSize(new Dimension(300, 400));
+         pan.setVisible(true);
+        pan.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);*/
+
     }
     
 }
