@@ -12,7 +12,7 @@ class textwritingswing extends JFrame{
     } 
 
 }
-public class ch16_4swing {
+public class ch16_5_swing {
     public static void main(String[] args) {
         textwritingswing t=new textwritingswing();
         t.setTitle("cromepage");

@@ -79,7 +79,7 @@ class studentpanel extends JFrame {
     }
 }
 
-public class ch16_swing {
+public class ch16_04_swing {
     public static void main(String[] args) {
         studentpanel pan = new studentpanel();
     }
