@@ -67,7 +67,11 @@ class studentpanel extends JFrame {
         add(enterButton);
 
         // Setting the layout constraints
-        GridBagConstraints gbc = new GridBagConstraints();
+         GridBagConstraints gbc = new GridBagConstraints();/*Since gridx and gridy specify the row and column position, 
+         respectively, in the grid, you can use different values (e.g., 1, 2, 3, etc.) 
+         to position the components in different rows and columns. 
+         The GridBagLayout allows you to create complex layouts by placing components in specific cells of the grid,
+          and you can adjust gridx and gridy accordingly to achieve the desired layout. */
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.anchor = GridBagConstraints.NORTH;

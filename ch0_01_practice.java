@@ -87,7 +87,7 @@ class pannelexa extends JFrame {
         add(viewDetailsButton);
 
         // Setting the layout constraints
-        GridBagConstraints gbc = new GridBagConstraints();
+         GridBagConstraints gbc = new GridBagConstraints();
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.anchor = GridBagConstraints.NORTH;
