@@ -15,7 +15,7 @@ import java.awt.*;
        getContentPane().add(p); // Add the panel to the content pane of the frame
         
        // Set the default close operation
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
 
         // Make the window visible
         setVisible(true);
@@ -27,7 +27,7 @@ import java.awt.*;
     {
       public static void main(String[] args) {
         // Create an instance of the MessageDisplay class to display the window
-        SwingUtilities.invokeLater(() -> new MessageDisplay());
+        MessageDisplay d= new MessageDisplay();
     }
     
     }
