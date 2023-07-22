@@ -14,8 +14,8 @@ class pannelexyz extends JFrame {
 
         // Creating the panel for student details
         Panel studentPanel = new Panel();
-        studentPanel.setLayout(new GridLayout(4, 2));
-
+       studentPanel.setLayout(new GridLayout(4, 2));
+ 
         JLabel nameLabel = new JLabel("Name:");
         JTextField nameField = new JTextField();
         JLabel classLabel = new JLabel("Class:");

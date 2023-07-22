@@ -14,7 +14,8 @@ class studentpanel extends JFrame {
 
         // Creating the panel for student details
         Panel studentPanel = new Panel();
-        studentPanel.setLayout(new GridLayout(4, 2));//exception can be used not be used
+        studentPanel.setLayout(new GridLayout(4, 2));//WHATEVER LABLES THAT WE ARE CREATING IN THE FRAME THERE ALLIGMENT
+        //DEPENDS ON THIS PART ONLY
 
         Label nameLabel = new Label("Name:");
         TextField nameField = new TextField();
