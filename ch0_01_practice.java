@@ -3,7 +3,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class pannelexa extends JFrame {
-    private String name;
+     private String name;/*SO THAT WHILE PRINTING IN THE ACTION LISTNER FUNCTION WE DONT HAVE TO MENTION IT IT AGAIN  */
     private String className;
     private String rollNo;
     private String subject;
@@ -52,10 +52,10 @@ class pannelexa extends JFrame {
                 // Perform any desired operations with the entered student details here
                 
                 // Displaying the entered details
-                System.out.println("Name: " + name);
+              /*   System.out.println("Name: " + name);
                 System.out.println("Class: " + className);
                 System.out.println("Roll No: " + rollNo);
-                System.out.println("Subject: " + subject);
+                System.out.println("Subject: " + subject);*/
                 
                 // Clearing the text fields for the next entry
                 nameField.setText("");

@@ -17,7 +17,7 @@ class studentpanel extends JFrame {
         studentPanel.setLayout(new GridLayout(4, 2));//WHATEVER LABLES THAT WE ARE CREATING IN THE FRAME THERE ALLIGMENT
         //DEPENDS ON THIS PART ONLY
 
-        Label nameLabel = new Label("Name:");
+        Label nameLabel = new Label("Name:");//IF YOU WANT THAT YOUR LABLE SEEMS TO BE IN BOLD THEN USE JLABLE/JTEXT PROCESS
         TextField nameField = new TextField();
         Label classLabel = new Label("Class:");
         TextField classField = new TextField();
@@ -78,7 +78,8 @@ class studentpanel extends JFrame {
         gbc.anchor = GridBagConstraints.NORTH;
         add(studentPanel, gbc);
 
-        gbc.gridy = 1;
+        gbc.gridy =1;
+        gbc.gridx=0;
         gbc.anchor = GridBagConstraints.CENTER;
         add(enterButton, gbc);
     }
