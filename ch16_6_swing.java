@@ -8,7 +8,12 @@ class pannelext extends JFrame {
     private ArrayList<String> classList = new ArrayList<>();
     private ArrayList<String> rollNoList = new ArrayList<>();
     private ArrayList<String> subjectList = new ArrayList<>();
-    private JPanel detailsPanel;
+    private JPanel detailsPanel;/*In this specific code, detailsPanel is used to hold a set of JPanel components,
+     each representing the details of a recorded student. When the user enters the details of a new student and 
+     clicks the "Enter" button, a new JPanel component is added to detailsPanel to display the entered student's 
+     details.The updateDetailsPanel() method is responsible for updating the content of detailsPanel. It removes 
+     all existing components from detailsPanel and adds new JPanel components for each recorded student's details, 
+     allowing the user to view all the entered student details in a scrollable format. */
 
     pannelext() {
         setTitle("cromepage");
@@ -69,7 +74,9 @@ class pannelext extends JFrame {
                 JOptionPane.showMessageDialog(null, "Student details recorded successfully");
 
                 // Updating the displayed details
-                updateDetailsPanel();
+                updateDetailsPanel();/*Since the updateDetailsPanel() method is called whenever a new student's details
+                 are entered through the "Enter" button, the GUI is automatically updated with the latest student
+                  information. This gives the appearance of dynamic updating as the user records more student details. */
             }
         });
 
@@ -94,8 +101,16 @@ class pannelext extends JFrame {
             }
         });
 
-        detailsPanel = new JPanel();
-        detailsPanel.setLayout(new BoxLayout(detailsPanel, BoxLayout.PAGE_AXIS));
+        detailsPanel = new JPanel();/*The ActionListener attached to 
+        the "Enter" button captures the entered student details when the button is clicked.
+        The ActionListener then stores the entered details in the respective ArrayLists.After storing the details,
+         it calls the updateDetailsPanel() method.The updateDetailsPanel() method clears the existing content of the 
+         detailsPanel and then dynamically creates new JPanel components for each recorded student's details.The newly
+          created JPanel components are added to the detailsPanel, effectively updating the GUI to display the latest 
+          student information. */
+        detailsPanel.setLayout(new BoxLayout(detailsPanel, BoxLayout.PAGE_AXIS));/*This is the constant representing the
+         vertical orientation for the BoxLayout. It means that the components added to detailsPanel will be arranged in a
+          single column from top to bottom. */
 
         JScrollPane scrollPane = new JScrollPane(detailsPanel);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
@@ -135,7 +150,7 @@ class pannelext extends JFrame {
     }
 }
 
-public class ch0_03_practice{
+public class ch16_6_swing{
     public static void main(String[] args) {
         pannelext pan = new pannelext();
     }
