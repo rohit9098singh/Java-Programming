@@ -3,7 +3,7 @@ public class LAB_11 {
         try {
             int arr[] = new int[-1];
 
-        } catch (Exception e) {
+        } catch(Exception e) {
             System.out.println(e);
         }
     }
