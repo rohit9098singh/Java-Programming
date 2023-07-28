@@ -41,7 +41,7 @@ public class ch5_singleinheritance_part_1 {
        System.out.println("the value of x "+children.getx());
        children.print();
        System.out.println("the value of y is "+children.gety());
-       children.printme();       
+       children.printme();      
 
 
     }
