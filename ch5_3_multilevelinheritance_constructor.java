@@ -39,7 +39,7 @@ class child1 extends base{
         System.out.println("i am an overloaded constructor with the value of  c is="+c);
     }
   }
-public class ch5_multilevelinheritance_constructor {
+public class ch5_3_multilevelinheritance_constructor {
     public static void main(String[] args) {
        // grandchild ch=new grandchild();
         grandchild ch=new grandchild(20,49,75);
