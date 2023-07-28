@@ -27,7 +27,7 @@ public void displayChild()
 System.out.println("Method defined inside Child class");  
 } 
 }
-public class ch5_hybridinheritance
+public class ch5_6_hybridinheritance
 {  
 public static void main(String args[])  
 {  
