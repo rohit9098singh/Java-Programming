@@ -33,7 +33,7 @@ class parent
    } 
 
 
-public class ch5_singleinheritance_part_1 {
+public class ch5_2_singleinheritance_part_1 {
     public static void main(String[] args) {
        child children=new child();
        children.setx(6);

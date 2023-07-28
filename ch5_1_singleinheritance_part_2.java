@@ -7,7 +7,7 @@ class hra_ma extends faculty{
     int hra=3000;
     int ma=1000;
 }
-public class ch5_singleinheritance_part_2 {
+public class ch5_1_singleinheritance_part_2 {
     public static void main(String[] args) {
         hra_ma salary=new hra_ma();
          salary.total_salary=salary.hra+salary.ma+salary.salary;
