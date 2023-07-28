@@ -1,4 +1,6 @@
 /*NOTE THAT BOTH HYBRID INHERITANCE AND MULTIPLE INHERITANCE CAN BE ACHIEVED THROUGH THE CONCEPT OF INTERFACE ONLY */
+                                 
+                            
 class HumanBody  
 {  
 public void displayHuman()  

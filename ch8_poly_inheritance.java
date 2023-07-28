@@ -26,6 +26,10 @@ class cellphone
     {
         System.out.println("connecting "+number);
     }
+    void pickcall()
+    {
+        System.out.println("connecting......");
+    }
 }
 class myphone extends cellphone implements mycamera,mywifi
 {
@@ -49,7 +53,7 @@ class myphone extends cellphone implements mycamera,mywifi
     @Override
     public void connnectnetwork(String network)
     {
-        System.out.println("connecting"+network);
+        System.out.println("connecting :"+network);
     }
 }
 public class ch8_poly_inheritance{
@@ -60,6 +64,7 @@ public class ch8_poly_inheritance{
         {
             System.out.println(e);
         }
+        p.connnectnetwork("vinod");
         p.record();
         p.takesnap();
         p.record4kvideo();
@@ -70,6 +75,8 @@ public class ch8_poly_inheritance{
          * respective object se he hoga         */
         mycamera c=new myphone();
         c.takesnap();
+        
+    
         };
         
     }
