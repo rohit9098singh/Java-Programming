@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 public class ch2_String_func {
     public static void main(String[] args)
     {
@@ -25,7 +25,7 @@ public class ch2_String_func {
        System.out.println(st.startsWith("Roh"));
        System.out.println(st.endsWith("roh"));
       
-       System.out.println(st.charAt('3'));
+       System.out.println(st.charAt(3));
        System.out.println(st.indexOf("o"));
 
        

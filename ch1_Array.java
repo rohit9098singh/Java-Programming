@@ -14,9 +14,9 @@ public class ch1_Array {
          }
          System.out.println("your enterd array is as follow");
          System.out. println("------------------------------");
-         for(int i=0;i<a.length;i++)
+         for(int i=0;i<n;i++)
          {
-            System.out.println(+a[i]);
+            System.out.println(a[i]);
          }
          sc.close();
     }

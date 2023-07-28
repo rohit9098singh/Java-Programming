@@ -25,4 +25,4 @@ public class ch2Varags {
        System.out.println("average is:"+obj.average(arr));
     }
     
-}
+}   
