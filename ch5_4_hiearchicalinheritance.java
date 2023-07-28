@@ -26,7 +26,7 @@ class D extends x
      System.out.println("method of Class D");
   }
 }  
-public class ch5_hiearchicalinheritance {
+public class ch5_4_hiearchicalinheritance {
     public static void main(String args[])
   {
      y obj1 = new y();

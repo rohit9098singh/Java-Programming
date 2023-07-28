@@ -34,7 +34,7 @@ class ayush extends rahul
     }
 }
 
-public class ch5_hybridinheritance_2 {
+public class ch5_5_hybridinheritance_2 {
     public static void main(String[] args) {
         ayush a=new ayush();
         a.mult();
