@@ -4,7 +4,7 @@ class kgfmines
     public String name;
     kgfmines(int id,String name)//passed argument are the local variable
     {
-        this.id=id;
+        this.id=id;//id=id
         this.name=name;
     }
     void showfunction()

@@ -5,13 +5,13 @@ public class  ch0_LoveMesseage{
         String name = "Dolly";
 
         String[] messageLines = {
-            "     ❤️  ❤️",
-            "   ❤️      ❤️",
-            "  ❤️   ❤️   ❤️",
-            "  ❤️       ❤️",
-            "   ❤️     ❤️",
-            "     ❤️ ❤️",
-            "       ❤️",
+            "     dolly  dolly",
+            "   dolly      dolly",
+            " dolly  dolly   dolly",
+            "  dolly       dolly",
+            "   dolly     dolly",
+            "     dolly dolly",
+            "       dolly",
         };
 
         String[] colors = {
