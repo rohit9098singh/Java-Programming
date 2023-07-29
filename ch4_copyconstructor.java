@@ -1,3 +1,4 @@
+//A copy constructor is a constructor that creates a new object by copying the data from an existing object of the same class.
 class Person {
     String name;
     int age;
