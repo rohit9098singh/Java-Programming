@@ -22,6 +22,7 @@ public class ch9_objectclass_1 {
         System.out.println("hash code of i="+i.hashCode());
         System.out.println("");
         
+        //it will return a string that consists of the class name
         //GENERAL SYNTAX-getClass().getName() + '@' + Integer.toHexString(hashCode())
         System.out.println("string opration"+ob.toString());//OB.TOSTRING() METHOD AND DOWN OB METHOD BOTH PRINTS THE SAME THING 
         System.out.println("string opration"+ob);// IF WE DONT ATTACH THE TOSTRING METHOD JVAM AOUTOMATICALLY ATTACHES IT 
