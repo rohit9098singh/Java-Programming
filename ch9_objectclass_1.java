@@ -27,6 +27,12 @@ public class ch9_objectclass_1 {
         System.out.println("string opration"+ob);// IF WE DONT ATTACH THE TOSTRING METHOD JVAM AOUTOMATICALLY ATTACHES IT 
         System.out.println("string opration"+c.toString());
         System.out.println("string operation"+i.toString());
+
+         System.out.println("ob.equals(ob): " + ob.equals(ob)); // true (same instance)
+        System.out.println("ob.equals(c): " + ob.equals(c));   // false (different classes)
+        System.out.println("ob.equals(i): " + ob.equals(i));   // false (different classes)
+        System.out.println("");
+    
         
     }
     
