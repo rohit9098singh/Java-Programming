@@ -45,7 +45,7 @@ class making_mul_div_class extends making_add_constructor
         return a*b*c;
        }
 }
-public class ch3_superkeyword {
+public class ch3_superkeyword2 {
     public static void main(String[] args) {
         making_mul_div_class m=new making_mul_div_class(30, 20, 10);
         System.out.println("sum of the given number are "+m.perform_add());
