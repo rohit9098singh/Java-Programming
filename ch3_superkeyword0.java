@@ -13,6 +13,7 @@ class auto extends automatically
     auto()
     {
         System.out.println("put your into silent mode since the timing is now "+super.a);
+        //if we have not used the super keyword over here then compiler would have the priority to the child variable
     }
 }
 public class ch3_superkeyword0 {
