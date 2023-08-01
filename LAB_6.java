@@ -28,14 +28,14 @@ class Mul_Div extends Add_Sub
     {
         return a*b;
     }
-    int div()
+    float div()
     {
         return a/b;
     }
 }
 public class LAB_6 {
     public static void main(String[] args) {
-        Mul_Div obj=new Mul_Div(20,30);
+        Mul_Div obj=new Mul_Div(20,10);
         System.out.println("addition ="+obj.add());
         System.out.println("subtraction ="+obj.sub());
         System.out.println("product ="+obj.mult());
