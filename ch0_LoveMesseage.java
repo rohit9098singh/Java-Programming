@@ -4,14 +4,22 @@ public class  ch0_LoveMesseage{
     public static void main(String[] args) throws InterruptedException {
         String name = "Dolly";
 
-        String[] messageLines = {
+        String[] messageLines = {/*The line String[] messageLines declares a variable named messageLines of type 
+            String array (i.e., String[]). This array can hold multiple strings, and each element in the array 
+            will be of type String.The purpose of this line in the program is to declare a variable that can store an array of strings. 
+            String[] messageLines = new String[5];
+                     OR
+            String[] messageLines = new String[3];
+            messageLines[0] = "Hello,";
+            messageLines[1] = "How are you?";
+            messageLines[2] = "Have a great day!";*/
             "     dolly  dolly",
             "   dolly      dolly",
             " dolly  dolly   dolly",
             "  dolly       dolly",
             "   dolly     dolly",
             "     dolly dolly",
-            "       dolly 😠😠😠😠😠😠😠😠😠",
+            "       dolly ",
         };
 
         String[] colors = {
@@ -25,13 +33,16 @@ public class  ch0_LoveMesseage{
 
         String loveMessage = "I want to meet you desperately, " + name + "!";
 
-        int duration = 300; // Time interval for animation in milliseconds
+        int duration = 300; /*  Time interval for animation in milliseconds No, the two variables duration
+         and colorIndex are not prebuilt or predefined in Java. They are regular variables that the programmer 
+        has declared and initialized with specific values in the code. */
         int colorIndex = 0;
 
         // Display the animated heart and pop-up message
         while (true) {
             // Clear console
-            System.out.print("\033[H\033[2J");
+            System.out.print("\033[H\033[2J");/* is used to clear the console screen. It uses ANSI escape
+             codes to send specific control sequences to the terminal. */
             System.out.flush();
 
             // Change color for the heart and the message

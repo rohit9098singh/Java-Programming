@@ -35,10 +35,14 @@ public class ch0_colourcode {
              System.out.println(colour[4]+"this is cyan colour");
             System.out.println(colour[5]+"this is magnita colour");
             // Resetting color to default
-        System.out.println("\033[0mBack to default color.");
+        System.out.println("\033[0m"+"Back to default color.");
             fresher f=new fresher();
             System.out.println(colour[0]);
             f.dancer();
+            System.out.print("\033[H\033[2J");//IT BASICALLY REMOVE ALL PREVIOUS OUTPUT OF THE PROGRAMME
+            //NOTE-->H is used in order all the space of the previous output if not given it will remove all the
+            //previous output but doesnot remove their space
+            //System.out.flush();
            System.out.println( colour[1]);
            f.nameofdance();
         
