@@ -11,7 +11,7 @@ public class  ch0_LoveMesseage{
             "  dolly       dolly",
             "   dolly     dolly",
             "     dolly dolly",
-            "       dolly",
+            "       dolly 😠😠😠😠😠😠😠😠😠",
         };
 
         String[] colors = {
