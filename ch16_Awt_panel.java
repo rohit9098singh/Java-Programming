@@ -10,7 +10,6 @@ public class ch16_Awt_panel {
         p2.add(l2);
         p.add(l);
         f.add(p);
-        f.add(p2);
         f.setVisible(true);
         f.setSize(300,400 );
         f.setLayout(null);
