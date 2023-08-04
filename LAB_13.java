@@ -31,5 +31,8 @@ import java.awt.*;
     }
     
     }
-    
+    /*<Applet code=Myapplet.class width=400 height=500>
+</Applet>
+*/
+
 

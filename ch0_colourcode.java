@@ -21,6 +21,8 @@ class fresher extends yourstudent
 }
 public class ch0_colourcode {
     public static void main(String[] args) {
+        int duration=300;
+        int colourcode;
         String [] colour={
             "\033[91m",//red 
             "\033[92m",//green
@@ -43,6 +45,7 @@ public class ch0_colourcode {
             //NOTE-->H is used in order all the space of the previous output if not given it will remove all the
             //previous output but doesnot remove their space
             //System.out.flush();
+            
            System.out.println( colour[1]);
            f.nameofdance();
         
