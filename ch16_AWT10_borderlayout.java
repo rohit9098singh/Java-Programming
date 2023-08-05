@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class ch16_AWT10_gridlayout {
+public class ch16_AWT10_borderlayout {
     public static void main(String[] args) {
         Frame frame = new Frame("BorderLayout Example");
         
