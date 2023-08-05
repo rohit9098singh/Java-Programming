@@ -10,7 +10,7 @@ public class ch16_AWT11_flowlayout {
         Button button4 = new Button("Button 4");
         Button button5 = new Button("Button 5");
 
-        frame.setLayout(new FlowLayout(10, 230, 40));
+        frame.setLayout(new FlowLayout(300, 230, 40));
 
         frame.add(button1);
         frame.add(button2);
