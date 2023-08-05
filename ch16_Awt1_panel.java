@@ -12,7 +12,7 @@ public class ch16_Awt1_panel {
         f.add(p);
          
         Panel p2=new Panel(null);
-         p2.setBounds(50, 50, 400, 200);
+        p2.setBounds(50, 50, 247,100 );
         Label l2=new Label("bye bye");
         p2.add(l2);
         f.add(p2);
