@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-public class ch16_Awt_panel {
+public class ch16_Awt1_panel {
     public static void main(String[] args) {
         Frame f=new Frame();
         f.setTitle("panel example");

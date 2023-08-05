@@ -1,6 +1,6 @@
 import java.awt.*;
 import java.awt.event.*;
-public class ch16_AWT1_button {
+public class ch16_AWT2_button {
     public static void main(String[] args) {
         Frame f=new Frame("button");
         Button b=new Button("click me ");

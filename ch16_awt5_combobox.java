@@ -6,6 +6,7 @@ class combobox_example
     {
         Frame f=new Frame();
         Choice c=new Choice();
+        c.setBounds(50, 50, 200, 30);
         c.add("java");
         c.add("Dbms");
         c.add("math");
@@ -21,7 +22,7 @@ class combobox_example
 
     }
 }
-public class ch16_awt5_combobox {
+public class ch16_AWT5_combobox {
     public static void main(String[] args) {
         combobox_example e=new combobox_example();
         

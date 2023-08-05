@@ -50,7 +50,7 @@ class checkboxdemo extends Frame
     }
 }
 
-public class ch16_awt_8_combobox{
+public class ch16_AWT_8_combobox{
     public static void main(String[] args) {
         checkboxdemo d = new checkboxdemo();
     }
