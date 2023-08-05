@@ -1,7 +1,7 @@
 import java.awt.*;
 import java.awt.event.*;
 
-public class ch16_Awt4_checkbox {
+public class ch16_Awt4_checkbox extends Frame {
     public static void main(String[] args) {
         Frame frame = new Frame("Simple Checkbox Example");
         Checkbox checkbox = new Checkbox("Check me!");
