@@ -15,7 +15,7 @@ public class ch1_prime_twointerval {
                     
                 }
             }   
-            if(i==j)
+            if(j==i)
             {
                 
                 System.out.println(i);
