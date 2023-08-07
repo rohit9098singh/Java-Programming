@@ -169,7 +169,7 @@ public class ch9_banakmanagement_system {
     public static void main(String[] args) {
         bankaccount bank = new bankaccount("rohit", "101");
         bank.menu();
-        bankaccount bank2 = new bankaccount("dolly", "102");
-        bank2.menu();
+       // bankaccount bank2 = new bankaccount("dolly", "102");
+        //bank2.menu();
     }
 }
