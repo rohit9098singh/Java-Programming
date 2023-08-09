@@ -26,9 +26,11 @@ class demo extends Sum {
 public class ch7_abstractclass {
     public static void main(String[] args) {
         demo de =new demo();
-        System.out.println(de.sumTwo(2,66));
+        de.sumTwo(2,66);
         de.display();
-       //System.out.println(de.sumthree(2,4,5));
+       de.sumThree(2,4,5);
+       de.display();
+
 }
 }
 
