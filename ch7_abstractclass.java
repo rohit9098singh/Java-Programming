@@ -1,10 +1,10 @@
 abstract class Sum {
-    public abstract int sumTwo(int a, int b);
+    public abstract void sumTwo(int a, int b);
 
-    public abstract int sumThree(int a, int b, int c);
+    public abstract void sumThree(int a, int b, int c);
 
     void display() {
-        System.out.println("This is abstract Class");
+        System.out.println("This is abstract Class ");
     }
 
 }
@@ -12,13 +12,13 @@ abstract class Sum {
 class demo extends Sum {
 
     @Override
-    public int sumTwo(int a, int b) {
-        return a + b;
+    public void sumTwo(int a, int b) {
+       System.out.println(  a + b);
     }
 
     @Override
-    public int sumThree(int a, int b, int c) {
-        return a + b + c;
+    public void sumThree(int a, int b, int c) {
+        System.out.println( a + b + c);
     }
 
 }
