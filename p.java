@@ -1,37 +1,63 @@
 import java.util.Scanner;
-class Flight {
-    public  int flightNumber; // Flight number as an integer
-    public String flightCode; // Flight code (e.g., "F123")
-    public String destination;
-    public String departureTime;
+class flight{
+    private String flightno;
+    private String bording;
+    private String destination;
+    private String originalseat;
+    private int availableseats;
+    public String time;
 
-    public Flight(int flightNumber, String flightCode, String destination, String departureTime) {
-        this.flightNumber = flightNumber;
-        this.flightCode = flightCode;
-        this.destination = destination;
-        this.departureTime = departureTime;
+    public flight(String flightno, String bording,String destination,String time,int i)
+    {
+        this.flightno=flightno;
+        this.bording=bording;
+        this.destination=destination;
+        this.originalseat=originalseat;
+        this.time=time;
     }
-
-    @Override
-    public String toString() {
-        return "Flight " + flightCode + " to " + destination + " at " + departureTime;
+  public  String getFlightDetails()
+    {
+      return("flight no:"+flightno+"bording point is from::"+bording+"destination popint is:: "+destination+"with seat availablity is:"+originalseat);
     }
+    public void make_reservation(int seats)
+    {
+        if(seats<=availableseats)
+        {
+            System.out.println("your:"+seats+":are booked successfully");
+            availableseats=availableseats-seats;
+          
+        }
+        else
+        {
+            System.out.println("you are trying to book ticket which is not in the range please enter the ticket number within "+availableseats);
+        }
+    }
+    public void cancel_resevation(int seats)
+    {
+        availableseats=availableseats+seats;
+    }
+    
 }
-
-class ReservationSystem extends Flight {
-    private Flight[] availableFlights;
-
-    public ReservationSystem() {
-        // Initialize the available flights
-        super(101, "AO90", "MUMBAI TO PATNA",9.45);
-        availableFlights = new Flight[]{
-            new Flight(1, "F123", "New York", "10:00 AM"),
-            new Flight(2, "F456", "Los Angeles", "11:30 AM"),
-            new Flight(3, "F789", "Chicago", "12:45 PM")
-        };
+class kingfisher
+{
+    flight[] flights;
+    public void view_availableFlights()
+    {
+        flights=new flight[]{new flight("F101","banglore","chennai","8:00 am", 200),new flight("F102", "patna", "jharkad", "2:30pm", 231)};
+    }
+    void show_flights()
+    {
+        System.out.println("AVAILABLE FLIGHTS ARE AS FOLLOW");
+        for(flight flight:flights)
+        {
+            System.out.println(flight.getFlightDetails());
+        }
     }
 
-  public void menubar() {
+}
+public class p {
+    public static void main(String[] args) {
+        kingfisher plane=new kingfisher();
         Scanner sc = new Scanner(System.in);
         int choice;
 
@@ -42,15 +68,20 @@ class ReservationSystem extends Flight {
 
             switch (choice) {
                 case 1:
-                      int flightnumber;
-                      String flightname;
-                      int timing;
-                      System.out.println("the available flights are as follow");
-                      
-                
-                    
-                    break;
+                         plane.show_flights();
+                         break;
                 case 2:
+                        System.out.println("Enter the flight number for your fligh booking");
+                        String flightnumber=sc.nextLine();
+
+                        System.out.println("enter the number of seats that you want to book for your journey");
+                        int seatsbooked=sc.nextInt();
+
+                        for(Flight flight:flight)
+                        {
+                            if
+                        }
+
                     
                     break;
                 case 3:
@@ -66,13 +97,7 @@ class ReservationSystem extends Flight {
 
             System.out.println("\nChoose an option");
         }
-    }
-}
-
-public class p {
-    public static void main(String[] args) {
-        ReservationSystem system = new ReservationSystem();
-        system.menubar();
-        system.
+        
+        
     }
 }
