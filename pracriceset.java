@@ -1,40 +1,27 @@
 import java.util.Scanner;
-public class pracriceset{
-  public static void main(String[] args) {
-    float s1,s2,s3,s4;
-    Scanner sc=new Scanner(System.in);
-    System.out.println("enter the number of student ");
-    int number=sc.nextInt();
-    float total[]=new float[number];
-    float[] percentage=new float[number];
-    for(int i=1;i<=number;i++)
-    {
-      System.out.println("enter the mark of math of studnet "+i);
-      s1=sc.nextInt();
+import java.util.Scanner;
 
-      System.out.println("eneter the marks of physics of student"+i);
-      s2=sc.nextInt();
+public class pracriceset {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number");
+        int first_no = sc.nextInt();
+        System.out.println("Enter the second number");
+        int second_no = sc.nextInt();
 
-      System.out.println("enter the marks of biology of student"+i);
-      s3=sc.nextInt();
+        int quotient = second_no / first_no;
+        int remainder = second_no % first_no;
 
-      System.out.println("enetr the marks of history of student"+i);
-      s4=sc.nextInt();
-
-      total[i]=s1+s2+s3+s4;
-      percentage[i]=total[i]/4;
+        if (remainder == 0) {
+            System.out.println("The first number is a multiple of the second.");
+            System.out.println("The first number divides the second number exactly " + quotient + " times.");
+        } else {
+            int smallestMultiple = (quotient + 1) * first_no;
+            int timesDivided = quotient + 1;
+            System.out.println("The first number is not a multiple of the second.");
+            System.out.println("The smallest multiple greater than the second number is: " + smallestMultiple);
+            System.out.println("The first number divides the second number " + timesDivided + " times.");
+        }
     }
-    for(int i=1;i<=number;i++)
-    {
-      if(total[i]>40 && percentage[i]>40)
-      {
-        System.out.println("pass");
-      }
-      else{
-        System.out.println("fail");
-      }
-    }
-
-    
-  }
 }
+
