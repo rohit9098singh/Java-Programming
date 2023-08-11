@@ -1,96 +1,40 @@
-import javax.swing.*;
-public class pracriceset
-{
-    public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null, "welocome to the gui buddy !");
-
-         String userinput=JOptionPane.showInputDialog(null,"enter your name please");
-         JOptionPane.showMessageDialog(null,"welocome :"+ userinput +"!" );
-
-         int choice=JOptionPane.showConfirmDialog(null,
-         "do u want to continue or exit ",
-         "configuration",
-         JOptionPane.YES_NO_CANCEL_OPTION);
-
-         if(choice==JOptionPane.YES_OPTION)
-         {
-        
-        JOptionPane.showMessageDialog(null, "you choce to proceed !");
-
-         }
-         else if(choice==JOptionPane.NO_OPTION){
-            JOptionPane.showMessageDialog(null, "you choice exit");
-         }
-         else
-         {
-            
-        JOptionPane.showMessageDialog(null, "cancelled");
-
-         }
-
-        
-    }
-}
-/*View Available Flights: You should add code to fetch and display the list of available flights from your data source. 
-This could involve reading from a file, a database, or any other relevant data storage.
-
-Make a Reservation: You should prompt the user for necessary information, like flight details and passenger information,
- and then implement the logic to create a reservation. You might need to store this information somewhere (such as a list or database) for future reference.
-
-Cancel a Reservation: Similar to making a reservation, prompt the user for the reservation details to be canceled. Then implement
- the logic to remove or mark the reservation as canceled in your data storage.
-
-Remember that these templates provide the structure for each function. You'll need to fill in the details according to your program's
- requirements, which may involve interacting with databases, handling user input, and implementing data management logic.
- 
 import java.util.Scanner;
-class reservationSystem{
-    public void menubar()
+public class pracriceset{
+  public static void main(String[] args) {
+    float s1,s2,s3,s4;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the number of student ");
+    int number=sc.nextInt();
+    float total[]=new float[number];
+    float[] percentage=new float[number];
+    for(int i=1;i<=number;i++)
     {
-        System.out.println("\n1:view available flights\n2:make a reservation\n3:cancel a reservation\n4exit");
-        int choice;
-        Scanner sc=new Scanner(System.in);
-        System.out.println("enter your choice");
-        choice=sc.nextInt();
-        while(choice!=4)
-        {
-            switch(choice)
-            {
-                case 1:
-                {
-                  break;
-                }
-                case 2:
-                {
-                  break;
-                }
-                case 3:
-                {
-                  break;
-                }
-                default :
-                {
-                  System.out.println("choose correct option to preceed1:view available flights\n2:make a reservation\n3:cancel a reservation\n4exit\"");
-                }
-            } 
-          System.out.println("\nchoose an option");     
-        }
-        System.out.println("thanks for using our service we are glade with your involvement");
-        
+      System.out.println("enter the mark of math of studnet "+i);
+      s1=sc.nextInt();
+
+      System.out.println("eneter the marks of physics of student"+i);
+      s2=sc.nextInt();
+
+      System.out.println("enter the marks of biology of student"+i);
+      s3=sc.nextInt();
+
+      System.out.println("enetr the marks of history of student"+i);
+      s4=sc.nextInt();
+
+      total[i]=s1+s2+s3+s4;
+      percentage[i]=total[i]/4;
     }
+    for(int i=1;i<=number;i++)
+    {
+      if(total[i]>40 && percentage[i]>40)
+      {
+        System.out.println("pass");
+      }
+      else{
+        System.out.println("fail");
+      }
+    }
+
     
+  }
 }
-
-public class p {
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        reservationSystem s=new reservationSystem();
-        s.menubar();
-
-        
-    }
-}
-        
-
-         */
