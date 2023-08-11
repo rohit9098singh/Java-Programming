@@ -1,4 +1,4 @@
-public class now {
+public class ch18_now {
     public static void main(String[] args) {
         int a = 20, b = 30, c = 5;
         if (a > b) {

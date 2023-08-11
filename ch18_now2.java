@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class now2 {
+public class ch18_now2 {
     public static void main(String[] args) {
         int s1,s2,s3,s4,total;
         float per;
