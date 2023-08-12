@@ -17,7 +17,7 @@ class shape
         System.out.println("area of the triangle is ="+(b*h)/2);
     }
 }
-public class ch1_methodoverriding_usinggeometrics_shapes {
+public class ch1_methodoverloading_usinggeometrics_shapes {
     public static void main(String[] args) {
         shape obj=new shape();
         obj.calculatearea(4);
