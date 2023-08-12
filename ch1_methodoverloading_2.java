@@ -1,4 +1,4 @@
-public class ch1_methodoverloading_3 {
+public class ch1_methodoverloading_2 {
     int add(int a, int b) {
         return a + b;
     }
@@ -12,7 +12,7 @@ public class ch1_methodoverloading_3 {
     }
 
     public static void main(String[] args) {
-        ch1_methodoverloading_3 mathObj = new ch1_methodoverloading_3();
+        ch1_methodoverloading_2 mathObj = new ch1_methodoverloading_2();
 
         System.out.println(mathObj.add(5, 7));           // Output: 12
         System.out.println(mathObj.add(2.5, 3.5));       // Output: 6.0

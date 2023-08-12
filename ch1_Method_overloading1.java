@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ch1_Method_overloading {
+public class ch1_Method_overloading1 {
     void add(int a ,int b)
     {
         
@@ -29,7 +29,7 @@ public class ch1_Method_overloading {
         b=sc.nextInt();
         c=sc.nextInt();
         d=sc.nextInt();
-        ch1_Method_overloading obj=new  ch1_Method_overloading();
+        ch1_Method_overloading1 obj=new  ch1_Method_overloading1();
         obj.add(a,b);
         obj.add(a,b,c);
         obj.add(a,b,c,d);

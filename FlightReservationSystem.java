@@ -105,7 +105,7 @@ public class FlightReservationSystem {
                     break;
                 case 4:
                     System.out.println("Thanks for using our system. We are glad to have your presence!");
-                    sc.close();
+                   // sc.close();
                     return;
                 default:
                     System.out.println("Invalid choice, please enter a valid option.");

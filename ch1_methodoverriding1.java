@@ -30,7 +30,7 @@ class Square extends Shape {
     }
 }
 
-public class ch1_methodoverriding {
+public class ch1_methodoverriding1 {
     public static void main(String[] args) {
         Circle circle = new Circle(5);
         Square square = new Square(4);
