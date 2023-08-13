@@ -1,3 +1,11 @@
+/*System: Yes, you can think of System as a class in Java. But instead of saying "method called out," it's more accurate to say 
+"a special thing called 'out'."
+
+out: This "out" is not exactly a method, but rather a special object called a "PrintStream." 
+It's like a printer that can print text to your screen (the console).
+
+println: This part is correct! println is a method that belongs to the "out" object. 
+It's a way to tell the "printer" to print a line of text. */
 import java.util.Scanner;
 
 class Flight {
@@ -46,7 +54,9 @@ class ViewAvailableFlights {
 
     void showFlights() {
         System.out.println("Available Flights:");
-        for (Flight flight : flights) {
+        for (Flight flight : flights) {/*for (Flight flight : flights) {: This is a for-each loop. It iterates over each Flight 
+            object in the flights collection (assuming flights is a collection of Flight objects). The loop variable flight is 
+            declared within the loop and represents the current Flight object being processed in each iteration. */
             System.out.println(flight.getFlightDetails());
         }
     }
