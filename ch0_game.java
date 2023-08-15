@@ -34,3 +34,8 @@ public class ch0_game
     } 
 
 }
+/*encapsulation- getters and setters 
+ * polymorphism- method overloading and method overriding
+ * abstraction- abstract class 
+ * inheritance -deriving the property of the existing class is called inheritance 
+ */

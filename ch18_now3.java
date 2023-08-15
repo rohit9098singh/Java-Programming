@@ -7,15 +7,15 @@ public class ch18_now3 {
         int no_of_student=sc.nextInt();
         float total[]=new float[no_of_student];
         float percentage[]=new float[no_of_student];
-        for(int i=0;i<no_of_student;i++)
+        for(int i=1;i<=no_of_student;i++)
         {
-           System.out.println("enter the marks in math for student "+(i+1)+":");
+           System.out.println("enter the marks in math for student "+(i)+":");
            math=sc.nextFloat();
-           System.out.println("enter the marks in physics s2 for the student"+(i+1)+":");
+           System.out.println("enter the marks in physics s2 for the student"+(i)+":");
            physics=sc.nextFloat();
-           System.out.println("enter the marks in chemistry for student "+(i+1)+":");
+           System.out.println("enter the marks in chemistry for student "+(i)+":");
            chemistry=sc.nextFloat();
-           System.out.println("enter the marks in  biology for the student"+(i+1)+":");
+           System.out.println("enter the marks in  biology for the student"+(i)+":");
            biology=sc.nextFloat();
 
            total[i]=math+physics+chemistry+biology;

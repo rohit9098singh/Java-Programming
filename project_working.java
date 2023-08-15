@@ -65,7 +65,7 @@ class employee extends banking_process
         }
     }
 }
-public class practice {
+public class project_working {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         banking_process process =new banking_process();
