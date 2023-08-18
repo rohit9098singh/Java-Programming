@@ -11,7 +11,7 @@ class sourabh extends rohit
     public int c;
     sourabh()
     {
-        a=12;
+        a=12; 
         c=14;
     }
     void sum()

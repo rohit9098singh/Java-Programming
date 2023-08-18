@@ -9,7 +9,7 @@ public class ch1_Method_overloading1 {
     void add(int a,int b,int c)
     {
         
-        int d=a+b+c;
+        int d=a+b+c;//returns addition
         System.out.println("the sum of the three number are "+d);
     }
     void add(int a,int b,int c,int d)

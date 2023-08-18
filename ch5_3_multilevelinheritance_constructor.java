@@ -41,8 +41,8 @@ class child1 extends base{
   }
 public class ch5_3_multilevelinheritance_constructor {
     public static void main(String[] args) {
-       // grandchild ch=new grandchild();
-        grandchild ch=new grandchild(20,49,75);
+     grandchild ch=new grandchild();
+       // grandchild ch=new grandchild(20,49,75);
     }
     
 }
