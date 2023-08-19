@@ -38,6 +38,10 @@ class C extends A
 	{
 		System.out.println("Inside sub class C");
 	}
+
+    public static Object getTimeZone() {
+        return null;
+    }
 }
 
 public class ch15_generics4
