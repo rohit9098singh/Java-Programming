@@ -33,7 +33,7 @@ public class LAB_9 {
         }
         for(int i=0;i<e.length;i++)
         {
-            for(int j=0;j<e.length;j++)
+            for(int j=i+1;j<e.length;j++)
             {
               if(e[i].appdate.after(e[j].appdate))
               {
