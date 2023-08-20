@@ -24,8 +24,8 @@ public class LAB_7 {
 
         System.out.println("static variable changed by one object");
         student.collgename="convent:";
-        s1.display();
         s.display();
+        s1.display();
 
     }
     

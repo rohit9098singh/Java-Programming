@@ -1,8 +1,10 @@
 class showing_overloading
 {
+    int a=10;
+    int b=20;
     int add()
     {
-        return (10+10);
+        return a+b;//or remove the above a,b declaration and put directly return 10+20;
     }
     int add(int x,int y)
     {
