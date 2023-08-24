@@ -22,7 +22,7 @@ public class ch18_now3 {
            percentage[i]=total[i]/4;
 
         }
-        for(int i=0;i<no_of_student;i++)
+        for(int i=1;i<=no_of_student;i++)
         {
             if(total[i]>40&&percentage[i]>40)
             {
