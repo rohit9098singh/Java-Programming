@@ -5,10 +5,10 @@ public class ch2_String_func {
       //Scanner sc =new Scanner(System.in); 
       //System.out.println("enter your string ");
       //String st=sc.nextLine();
-      String st=new String("   Rohit   ");
+      String st=new String("Rohit");
 
 
-      int l=st.length();  
+     /*/ int l=st.length();  
       System.out.println("the length of the string is "+l);
 
       String lcase=st.toLowerCase();
@@ -17,16 +17,16 @@ public class ch2_String_func {
       String ucase=st.toUpperCase();
       System.out.println("your enterd string is converted into upper case "+ucase); 
 
-       System.out.println(st.substring(2));
+       System.out.println(st.substring(2));*/
        System.out.println(st.substring(1,4));
 
-       System.out.println(st.replace('R','d'));
+      /*/ System.out.println(st.replace('R','d'));
 
        System.out.println(st.startsWith("Roh"));
        System.out.println(st.endsWith("roh"));
       
        System.out.println(st.charAt(3));
-       System.out.println(st.indexOf("o"));
+       System.out.println(st.indexOf("o"));*/
 
        
     }

@@ -1,4 +1,5 @@
-//METHOD OVERLOADING AND OVERRIDING IS AN EXAMPLE OF POLYMORPHISM
+//METHOD OVERLOADING AND OVERRIDING IS AN EXAMPLE OF POLYMORPHISM and method overloading is an example of compile time polymorphism
+//and method overriding is called as a runtime polymorphism
                      //METHOD OVERLOADING
 public class ch3_oops8_termilogy_polymorphism {
     public void print(int num) {
