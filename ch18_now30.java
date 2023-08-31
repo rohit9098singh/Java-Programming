@@ -1,4 +1,4 @@
-import java.util.Scanner;
+/*import java.util.Scanner;
 class theirEmployee
 {
     String name;
@@ -48,4 +48,4 @@ public class ch18_now30 {
         }
     }
     
-}
+}*/

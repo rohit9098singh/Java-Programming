@@ -1,75 +1,68 @@
-class heroEmployee
+class myAcharya 
 {
     private String name;
     private double salary;
-    public void setName(String name)
+   public myAcharya(String name,double salary)
     {
-        this.name=name;
+       this.name=name;
+       this.salary=salary;
     }
-    public String getName()
+    public void print()
     {
-        return name;
+      System.out.println("name "+name);
+      System.out.println("salary "+salary);
     }
-     public void setSalary(double d)
+    public void print(float percent)
     {
-        this.salary=d ;
-    }
-    public double getSalary()
-    {
-        return salary;
+        print();
+        System.out.println("bonus ="+bonus(percent));
     }
     public double bonus(float percent)
-     {
-       return (percent/100.0)*salary ;
-     }
+    {
+        return (percent/100.0)*salary;
+    }
 }
-class manager extends heroEmployee{
-    private String secretary;
-    public void  setsecretary(String  secretary)
+class manager extends myAcharya{
+    String secretary;
+   public manager(String name,double salary,String secretary)
     {
-        this. secretary= secretary;
+      super(name,salary);
+      this.secretary=secretary;
     }
-    public String getsecretary()
+    public void print()
     {
-        return  secretary;
+        super.print();
+        System.out.println("secretary ="+secretary);
+    }
+    public void  print(float percent)
+    {
+        print();
+        System.out.println("bonus ="+bonus(percent));
+
     }
     public double bonus(float percent)
     {
-        double oldvalue=super.bonus(percent);
-        double newvalue=oldvalue+(oldvalue*0.5);
-        return newvalue;
+        double oldbonus=super.bonus(percent);
+        double mbonus=(oldbonus)+oldbonus*0.5;
+        return mbonus;
+    
     }
+
 }
 public class ch18_now33 {
     public static void main(String[] args) {
-        heroEmployee e=new manager();
-        e.setName("ROHIT SINGH");
-        e.setSalary(30000.400);
-        System.out.println(e.getName());
-        System.out.println(e.getSalary());
-        System.out.println(e.bonus(12.2f));
+        myAcharya obj1=new myAcharya("rohit singh", 400000);
+        obj1.print();
+        obj1.print(5.2f);
+        myAcharya obj2=new myAcharya("romit", 500000);
+        obj2.print();
+        obj2.print(3.4f);
+        System.out.println("=================MANAGER DETAIS======================");
+        manager m=new manager("sachin",300000,"vishaka");
+        m.print();
+        m.print(2.4f);
         
 
-        manager m=new manager();
-        m.setsecretary("KUMAR SANGAKARA");
-        System.out.println(m.getsecretary());
-         System.out.println(e.bonus(8.2f));
-
-
-       
     }
     
 }
-/*Write Java code as instructed. 
-• Define class Employee that has the following members:
-– Private instance variables String empName, double salary
-– Mutator methods to update the instance variables
-– Accessor methods to access the instance variables 
-– Method public double bonus(float percent) that returns the bonus computed as 
-(percent/100.0)*salary 
-• Define class EmpTest that has the main method and the following functionalities: 
-– Create an Employee object
-– Invoke mutator methods to set the values of name and salary 
-– Invoke accessor methods to get the details of an Employee 
-– Invoke method bonus(float percent) to get the bonus of an Employee
- */
