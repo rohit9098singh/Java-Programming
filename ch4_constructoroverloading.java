@@ -34,11 +34,12 @@ class hclemployee
 }
 public class ch4_constructoroverloading {
     public static void main(String[] args) {
-        hclemployee rahul=new hclemployee(1, "amit");
+    
+         hclemployee rahul=new hclemployee(1, "amit");
         System.out.println(rahul.getid());
         System.out.println(rahul.getname());
 
-        hclemployee e=new hclemployee();
+      //  hclemployee e=new hclemployee();
         
     }
     

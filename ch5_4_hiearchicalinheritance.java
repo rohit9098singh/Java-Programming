@@ -16,7 +16,7 @@ class z extends x
 {
   public void methodC()
   {
-     System.out.println("method of Class C");
+     System.out.println("method of  the class c who has extended x for its property");
   }
 }
 class D extends x
