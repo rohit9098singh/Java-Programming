@@ -7,7 +7,7 @@ public class ch18_now28 {
                 if(j==1)
                 {
                     System.out.println();
-                    break;
+                    continue;
                 }
                 System.out.print(i);
             }

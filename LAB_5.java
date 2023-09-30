@@ -14,6 +14,10 @@ class showing_overloading
     {
         return a+b;
     }
+   float add(float a,int b)
+    {
+        return a+b;
+    }
 }
 public class LAB_5 {
     public static void main(String[] args) {
@@ -21,7 +25,7 @@ public class LAB_5 {
         System.out.println("using default value for sum ="+o.add());
        System.out.println("using integer value for sum ="+o.add(3,4));
        System.out.println("using float value for sum ="+o.add(4.4f,4.4f));
-       
+       o.add();
        
     }
     

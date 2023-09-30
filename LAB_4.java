@@ -13,7 +13,7 @@ public class LAB_4 {
         int pay=sc.nextInt();
         if(pay<10000||pay>50000)
         {
-            throw new payOutOfBounds("slary not in a valid range");
+            throw new payOutOfBounds("=== ");
             
         }
         else{

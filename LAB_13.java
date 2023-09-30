@@ -6,7 +6,7 @@ class framedemo {
         f.setTitle("first gui programme");
        // Panel p=new Panel();
         Label l=new Label("welcome to gui interface happy to see u here dear");
-        f.setBounds(50,75,350,50);
+       // f.setBounds(50,75,350,50);
         f.add(l);
        f. setVisible(true);
         f.setSize(300,300);

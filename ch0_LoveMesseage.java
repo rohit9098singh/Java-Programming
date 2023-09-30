@@ -13,13 +13,13 @@ public class  ch0_LoveMesseage{
             messageLines[0] = "Hello,";
             messageLines[1] = "How are you?";
             messageLines[2] = "Have a great day!";*/
-            "     dolly  dolly",
-            "   dolly      dolly",
-            " dolly  dolly   dolly",
-            "  dolly       dolly",
-            "   dolly     dolly",
-            "     dolly dolly",
-            "       dolly ",
+            "     ?  ?",
+            "   ?       ?",
+            " ?  ?       ?",
+            "  ?         ?",
+            "   ?       ?",
+            "     ?   ?",
+            "       ? ",
         };
 
         String[] colors = {
@@ -31,7 +31,7 @@ public class  ch0_LoveMesseage{
             "\033[96m", // Cyan
         };
 
-        String loveMessage = "I want to meet you desperately, " + name + "!";
+        String loveMessage = "your name, " + name + "!";
 
         int duration = 300; /*  Time interval for animation in milliseconds No, the two variables duration
          and colorIndex are not prebuilt or predefined in Java. They are regular variables that the programmer 
